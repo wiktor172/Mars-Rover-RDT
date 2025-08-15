@@ -1,17 +1,22 @@
 # Mars Rover RDT
-this is my go at the mars rover challenge set by the RDT work experience
-i did all of the prototypes in OOP in python without any extra libaries just messing around with python, sources will be linked in this repo.
+This is my go at the Mars Rover challenge set by the RDT work experience.
+I did all of the prototypes in OOP in Python without any extra libraries—just messing around with Python. Sources will be linked in this repo.
 
 ### how i broke this task into smaller parts:
-- there is a platoe on mars with more then multiple mars rovers on mars
-- the rovers can face North, South, East, West and they can move forward depending on the direction they are facing
-    - this is determined through commands like N,S,E,W
-    - M is the command to move forward
-- The program checks if the rover falls of the platoe
+There is a plateau on Mars with more than one rover.
+The rovers can face North, South, East, or West, and they move forward depending on the direction they are facing.
+This is represented by directions like N, S, E, W.
+M is the command to move forward.
+The program checks if the rover falls off the plateau.
 
 ## How i built it
-firstly i started with breaking the wordy problem down into something i could understand in my head, so i used a notebook and pretty much abstracted it down to the bare bones and made a Minimum viable product criteria that i could follow.
-Then i started with building a single rover. This was the stage were i was trying to figure out different approaches to solving the problem. this can be seen through the prototypes in the  
+First, I started by breaking the wordy problem down into something I could understand in my head. I used a notebook, abstracted it down to the bare bones, and made minimum viable product criteria that I could follow.
+Then I started by building a single rover. This was the stage where I was trying to figure out different approaches to solving the problem. This can be seen through the prototypes in the repo.
+
+## How to run
+1. Make sure you have Python 3 installed.
+2. Download/clone this repo and open a terminal in the repo folder.
+3. Run the script: multiple_rovers_main.py
 
 ## Testing
 (2 rovers)
