@@ -32,7 +32,7 @@ class Rover:
             self.x = self.x - 1
         #keep the self.rover_coordinates updated bc otherwise it wont change
         self.rover_coordinates = [self.x, self.y]
-        #if i ever add obstacles this is where i'd probably hook a collision check before moving
+        #if i ever add obstacles this is were i put collision check before moving
 
         #this is what i was reffering to in the beginning, the maths this is made through simple if statements
     def turn_left(self):
@@ -115,7 +115,7 @@ def main():
             break  
 
         except:
-            print("please enter two numbles for example '3 3' ")
+            print("please enter two numbers for example '3 3' ")
             #simply if user inputs wrong things, the loop will go again returning an error
             #catching everything here on purpose, i know its broad but its fine for a cli
 
@@ -134,7 +134,7 @@ def main():
                 #pretty much a tutorial for how to run
                 print(f"\nrover {i} setup...")
                 print("x and y are the rovers position on the platue\nD is the starting direction the rover is faceing")
-                #reminding myself every time so i dont forget the order lol
+                #reminding myself every time so i dont forget the order 
 
                 #get the user input
                 start_line = input("Enter the rovers position like 'x y D' : ").strip()
@@ -151,7 +151,7 @@ def main():
                 x_text = parts[0]
                 y_text = parts[1]
                 dir_text = parts[2]
-                #convert coords to numbers otherwise you cant add/sub
+                #convert coords to numbers otherwise you cant add sub
                 start_x = int(x_text)
                 start_y = int(y_text)
                 #format dir to uppercase so both work
@@ -160,12 +160,12 @@ def main():
                 #check the direction is valid, just basic sanity
                 if start_dir not in ("N", "E", "S", "W"):
                     print("invalid direction")
-                    #only these four. no diagonals. no funny business
+                    #only these four. no funny business
                     continue
 
                 #make the rover using my class as a base
                 rover = Rover(start_x, start_y, start_dir, [start_x, start_y])
-                #i like passing the list explicitly so its obvious what the start coords were
+                #i like passing so its obvious what the start coords were
 
                 if not rover.check_start(max_x, max_y):
                     print('start is off the platue, try again...')
